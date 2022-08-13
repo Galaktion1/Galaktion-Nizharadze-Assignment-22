@@ -64,15 +64,6 @@ struct TVShow: Codable {
 }
 
 
-import Foundation
-
-protocol MovieService {
-    
-    func fetchMovies(from endpoint: EndPoint, completion: @escaping (Result<TopRatedShows, MovieError>) -> ())
-    
-}
-
-
 enum EndPoint {
     case id(String)
     case topRated
