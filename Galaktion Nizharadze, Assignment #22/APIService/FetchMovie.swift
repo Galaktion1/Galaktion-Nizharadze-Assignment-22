@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct ForBody {
+    let value: Double
+}
+
 
 class TVShowFetch {
     
@@ -110,26 +114,31 @@ class TVShowFetch {
     }
     
     
+
     func addFeedback(id: String, feedback: Double, completion: @escaping (FeedbackModel)->(Void)) {
         var urlComponents = URLComponents(string: "https://api.themoviedb.org/3/tv/\(id)/rating")
         
         let queryItems: [URLQueryItem] = [URLQueryItem(name: "api_key", value: "07b3c5721acb723e40379334a99591ef"),
                                           URLQueryItem(name: "guest_session_id", value: UserDefaults.standard.value(forKey: "token") as? String)]
-        
-        
+
+
         urlComponents?.queryItems = queryItems
+            
+            
         
         var request = URLRequest(url: (urlComponents?.url)!)
-        request.httpMethod = "POST"
+       
         
-        let body = ["value" : feedback]
-        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        request.httpMethod = "POST"
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        
+
+        request.httpBody = "{ \"value\": \(feedback.format(f: ".0")) }".data(using: .utf8)
+        
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
-                
-                print(response!)
-                return
+            if let httpResponse = response  {
+                print(httpResponse)
             }
             
             if let error = error {
@@ -156,5 +165,11 @@ class TVShowFetch {
         }.resume()
     }
     
-    
+}
+
+
+extension Double {
+    func format(f: String) -> String {
+        return String(format: "%\(f)f", self)
+    }
 }
