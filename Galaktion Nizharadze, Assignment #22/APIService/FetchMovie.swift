@@ -113,13 +113,9 @@ class TVShowFetch {
     func addFeedback(id: String, feedback: Double, completion: @escaping (FeedbackModel)->(Void)) {
         var urlComponents = URLComponents(string: "https://api.themoviedb.org/3/tv/\(id)/rating")
         
-        var queryItems = [URLQueryItem]()
-        let feedbackParameter = ["api_key": "07b3c5721acb723e40379334a99591ef",
-                                 "guest_session_id" : UserDefaults.standard.value(forKey: "token") as! String
-        ]
-        for (key, value) in feedbackParameter {
-            queryItems.append(URLQueryItem(name: key, value: value))
-        }
+        let queryItems: [URLQueryItem] = [URLQueryItem(name: "api_key", value: "07b3c5721acb723e40379334a99591ef"),
+                                          URLQueryItem(name: "guest_session_id", value: UserDefaults.standard.value(forKey: "token") as? String)]
+        
         
         urlComponents?.queryItems = queryItems
         
@@ -159,4 +155,6 @@ class TVShowFetch {
             
         }.resume()
     }
+    
+    
 }
