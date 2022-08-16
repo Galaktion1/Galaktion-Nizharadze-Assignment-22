@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct ForBody {
-    let value: Double
-}
-
-
 class TVShowFetch {
     
     static let shared = TVShowFetch()
@@ -23,7 +18,7 @@ class TVShowFetch {
     
     private init() {}
     
-    func fetchMovies<T: Codable>(from endpoint: EndPoint, completion: @escaping (T)->(Void)) {
+    func fetchMovies<T: Decodable>(from endpoint: EndPoint, completion: @escaping (Result<T, Error>) -> Void) {
         var urlComponents = URLComponents(string: baseAPIURL + endpoint.value)
         
         var queryItems = [URLQueryItem]()
@@ -44,6 +39,7 @@ class TVShowFetch {
             }
             
             if let error = error {
+                completion(.failure(error))
                 
                 print("\(error)")
             }
@@ -56,10 +52,11 @@ class TVShowFetch {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(T.self, from: data)
                 DispatchQueue.main.async {
-                    completion(jsonData)
+                    completion(.success(jsonData))
                 }
             }
             catch  {
+                completion(.failure(error))
                 print(error)
                 
             }

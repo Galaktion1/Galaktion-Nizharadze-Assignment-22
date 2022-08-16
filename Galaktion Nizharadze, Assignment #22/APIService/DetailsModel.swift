@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TVShowDetails: Codable {
+struct TVShowDetails: Decodable {
     let backdropPath: String?
     let episodeRunTime: [Int]
     let firstAirDate: String
@@ -62,7 +62,7 @@ struct TVShowDetails: Codable {
     }
     
     // MARK: - Genre
-    struct Genre: Codable {
+    struct Genre: Decodable {
         let id: Int
         let name: String
     }

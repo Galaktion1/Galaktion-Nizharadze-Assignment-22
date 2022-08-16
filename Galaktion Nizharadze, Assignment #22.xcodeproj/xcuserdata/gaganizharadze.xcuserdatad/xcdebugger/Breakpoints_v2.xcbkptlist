@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7569C5B9-E74A-47AB-BEFA-C03847D6634C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F6A62E5-E9AC-48EF-A112-0D583641394B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Galaktion Nizharadze, Assignment #22/APIService/FetchMovie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "addFeedback(id:feedback:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEC37BFE-669D-4423-AAA9-C852295E1CBB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Galaktion Nizharadze, Assignment #22/APIService/FetchMovie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "addFeedback(id:feedback:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91D71AEB-2DB8-454E-A2D0-6CD604647F1E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Galaktion Nizharadze, Assignment #22/APIService/FetchMovie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "addFeedback(id:feedback:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "91D71AEB-2DB8-454E-A2D0-6CD604647F1E - ac90a60a2794fd6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Galaktion_Nizharadze__Assignment__22.TVShowFetch.addFeedback(id: Swift.String, feedback: Swift.Double, completion: (Galaktion_Nizharadze__Assignment__22.FeedbackModel) -&gt; ()) -&gt; ()"
+                  moduleName = "Galaktion Nizharadze, Assignment #22"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganizharadze/Desktop/Galaktion-Nizharadze-Assignment-22/Galaktion%20Nizharadze,%20Assignment%20%2322/APIService/FetchMovie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "359">
+               </Location>
+               <Location
+                  uuid = "91D71AEB-2DB8-454E-A2D0-6CD604647F1E - ac90a60a2794fd6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Galaktion_Nizharadze__Assignment__22.TVShowFetch.addFeedback(id: Swift.String, feedback: Swift.Double, completion: (Galaktion_Nizharadze__Assignment__22.FeedbackModel) -&gt; ()) -&gt; ()"
+                  moduleName = "Galaktion Nizharadze, Assignment #22"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganizharadze/Desktop/Galaktion-Nizharadze-Assignment-22/Galaktion%20Nizharadze,%20Assignment%20%2322/APIService/FetchMovie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "394">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADECE577-81E7-4AC5-B962-6232C8FD8B87"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Galaktion Nizharadze, Assignment #22/APIService/FetchMovie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "addFeedback(id:feedback:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECF97B07-40BD-4989-B4EA-ED0E151F4B52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Galaktion Nizharadze, Assignment #22/APIService/FetchMovie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "addFeedback(id:feedback:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7316C0C8-78C3-4F53-A570-03318A50AD4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Galaktion Nizharadze, Assignment #22/APIService/FetchMovie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "addFeedback(id:feedback:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
